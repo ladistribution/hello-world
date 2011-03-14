@@ -1,0 +1,20 @@
+<package>
+  <id>hello-world</id>
+  <name>Hello World!</name>
+  <version>0.1-1</version>
+  <type>application</type>
+  <need>lib-limonade</need>
+  <install>
+      <!--
+      <preference type="user" label="Administrator" name="administrator" value=""/>
+      -->
+  </install>
+  <configuration>
+      <preference type="text" label="Application Name" name="name"/>
+  </configuration>
+  <colors>
+      <scheme>base</scheme>
+      <scheme>bars</scheme>
+      <scheme>panels</scheme>
+  </colors>
+</package>
