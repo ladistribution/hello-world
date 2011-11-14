@@ -18,7 +18,11 @@ function before()
     set('site', $site);
     set('application', $application);
     set('configuration', $configuration);
-    layout('layout.html.php');
+    if (defined('LD_BOOTSTRAP_CSS') && constant('LD_BOOTSTRAP_CSS')) {
+        layout('layout-bootstrap.html.php');
+    } else {
+        layout('layout.html.php');
+    }
 }
 
 function isAdmin()
